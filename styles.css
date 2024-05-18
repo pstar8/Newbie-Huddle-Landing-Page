@@ -150,14 +150,6 @@ i:hover {
 
   .footer-icons {
     justify-content: flex-end;
-    margin: 6rem 0 0.5rem 0;
+    margin: 8rem 0 0.5rem 0;
   }
 }
-
-/* .attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-} */
