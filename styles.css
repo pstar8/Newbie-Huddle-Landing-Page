@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  font-size: 16px;
+  font-family: 'Open Sans', 'Poppins';
+}
+
+header nav {
+  display: flex;
+  align-content: flex-start;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Open Sans';
+}
+
+main img {
+  width: 50%;
+}
+
+main div span {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 2rem 0;
+  padding: 0.5rem 2.5rem;
+  border-radius: 60px;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(257, 40%, 49%);
+}
+
+main div span:active,
+span:hover {
+  cursor: pointer;
+  background-color: hsl(300, 69%, 71%);
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.footer-icons i {
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.footer-icons i:active,
+i:hover {
+  color: hsl(300, 69%, 71%);
+  border: 1px solid hsl(300, 69%, 71%);
+  cursor: pointer;
+}
+
+/* Mobile Design */
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(./images/bg-mobile.svg);
+  }
+
+  header {
+    padding: 1rem 2rem;
+  }
+
+  header nav img {
+    width: 45%;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 1rem 2rem;
+    align-items: center;
+  }
+
+  main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main img {
+    width: 75%;
+  }
+
+  main div h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: 600;
+  }
+
+  main div p {
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 400;
+    margin: 1rem 0;
+  }
+  .footer-icons {
+    justify-content: center;
+    margin: 4rem 0 0.5rem 0;
+  }
+}
+
+/* Desktop Version */
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(./images/bg-desktop.svg);
+  }
+
+  header {
+    padding: 2rem 4rem;
+  }
+
+  main {
+    flex-direction: row;
+    padding: 2rem 4rem;
+    align-content: flex-start;
+  }
+
+  main div h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    margin: 1.5rem 0;
+    font-weight: 600;
+  }
+
+  main div p {
+    font-size: 1.25rem;
+    text-align: left;
+    margin: 1.5rem 0;
+    font-weight: 400;
+  }
+
+  .footer-icons {
+    justify-content: flex-end;
+    margin: 6rem 0 0.5rem 0;
+  }
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
